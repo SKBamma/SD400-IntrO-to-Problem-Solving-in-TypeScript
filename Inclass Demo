@@ -1,0 +1,107 @@
+Example-1
+// Get the radius from the user
+
+var radiusInput = prompt("Enter the radius of the circle:");
+
+// Convert the user input to a number
+
+var radius = parseFloat(radiusInput);
+
+// Calculate the area of the circle
+
+var area = Math.PI * Math.pow(radius, 2);
+
+// Display the calculated area
+
+console.log("The area of the circle with radius " + radius + " is " + area.toFixed(2));
+
+ 
+
+Example-2
+
+// Get the user's first name
+
+var firstName = prompt("Enter your first name:");
+
+// Get the user's last name
+
+var lastName = prompt("Enter your last name:");
+
+// Extract the first initial from the first name
+
+var firstInitial = firstName.charAt(0);
+
+// Extract the first initial from the last name
+
+var lastInitial = lastName.charAt(0);
+
+// Combine the initials to form the full initials
+
+var initials = firstInitial + lastInitial;
+
+// Display the user's initials
+
+Console.log("Your initials are: " + initials);
+
+ 
+Example-3
+
+// Get the number of coin flips from the user
+
+var n = parseInt(prompt("Enter the number of coin flips:"));
+
+// Initialize a variable to count the number of heads
+
+var headsCount = 0;
+
+// Perform the coin flips – n times
+
+for (var i = 0; i < n; i++) {
+
+  if (Math.floor(Math.random() * 2) === 1) {
+
+    // If the result of the coin flip is 1, it's a head
+
+    headsCount++;
+
+  }
+
+}
+
+
+// Display the results
+
+alert("Out of " + n + " coin flips, there were " + headsCount + " heads.");
+
+ 
+
+Example-4
+
+// List of names to search within
+
+var names = ["Alice", "Bob", "Charlie", "David", "Alice", "Eve", "Frank", "Alice"];
+
+// Get the target name from the user
+
+var target = prompt("Enter a name to search for:");
+
+// Initialize a variable to count occurrences
+
+var count = 0;
+// Loop through the names and count occurrences
+
+for (var i = 0; i < names.length; i++) {
+
+  // Compare if target is equal to name 
+
+  if (names[i] === target) {
+
+    count++;
+
+  }
+
+}
+
+// Display the number of occurrences
+
+alert("The name '" + target + "' occurs " + count + " times in the list.");
